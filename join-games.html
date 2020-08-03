@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<head>
+    <title>Projek Bola | Join Games</title>
+</head>
+<body>
+    <nav class="navbar navbar-default topnav" role="navigation">
+        <div class="topnav topnav_stk">
+            <div class="navbar-header">
+                <a class="navbar-brand topnav" href="index.html">
+                    <img src="source/logo2_mock.png" alt="Home" style="max-width:150px">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <a href="join-games.html" class="" target="_self">
+        <div class="early_bird">
+          <span class="first"></span>
+          <span class="second">Join games here!</span>
+        </div>
+    </a>
+    <section class="listingMain ListBg">
+        <div id="list">
+            <div class="container GameContainer">
+                <div class="row FilterWarp">
+                    <div class="filterMain col-xs-12 filterMain_game">
+                        <div class="col-md-3 col-sm-6 col-xs-12 gm-type gamepadright0 make_50">
+                            <form name="filter_all" action="/results" method="post">
+                            <label>Hari</label>
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day1" value="mon" name="days">
+                                <label for="day1">Isn</label>
+                            </div>
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day2" value="tue" name="days">
+                                <label for="day2">Sel</label>
+                            </div>
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day3" value="wed" name="days">
+                                <label for="day3">Rab</label>
+                            </div>
+        
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day4" value="thu" name="days">
+                                <label for="day4">Kha</label>
+                            </div>
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day5" value="fri" name="days">
+                                <label for="day5">Jum</label>
+                            </div>
+        
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day6" value="sat" name="days">
+                                <label for="day6">Sab</label>
+                            </div>
+        
+                            <div class="custom-checkbox checkbox-inline">
+                                <input type="checkbox" id="day7" value="sun" name="days">
+                                <label for="day7">Ahd</label>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 sl-date game_dt_field_div">
+                            <label>Tarikh</label>
+                                <form action="action.php" method="post">
+                                    <div id="datepicker" name="selcDate" class="input-group date form_datepicker" datadate="" data-date-format="dd/mm/yy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd"> 
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                        <input id="date" class="form-control game_dt_field" size="16" type="text" readonly="" value="" placeholder="Tarikh" onchange="dateChange()">
+                                        <div class="games_reset_date">X</div>
+                                    </div>
+                                </form>
+                        </div>
+                        <hr>
+                        <div class="col-md-4 col-sm-6 col-xs-12 sl-location gamepadright0">
+                            <label>Negeri</label>
+                            <div class="input-group input-group-lg"> 
+                                <span class="input-group-addon">
+                                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                                </span>
+                                <div class="icon-addon addon-lg">
+                                    <div class="btn-group bootstrap-select show-tick form-control">
+                                        <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="locPick" title="Mana-mana">
+                                            <span class="filter-option pull-left">Mana-mana</span>&nbsp;
+                                            <span class="bs-caret">
+                                                <span class="caret"></span>
+                                            </span>
+                                        </button>
+                                        <div class="dropdown-menu open">
+                                            <ul class="dropdown-menu inner" role="menu">
+                                                <li data-original-index="0" class="selected">
+                                                    <a tabindex="0" class="" data-tokens="null">
+                                                        <span class="text">Mana-mana</span>
+                                                        <span class="glyphicon glyphicon-ok check-mark"></span>
+                                                    </a>
+                                                </li>
+                                                <li data-original-index="1">
+                                                    <a tabindex="0" class="" data-tokens="null">
+                                                        <span class="text">Johor</span>
+                                                        <span class="glyphicon glyphicon-ok check-mark"></span>
+                                                    </a>
+                                                </li>
+                                                <li data-original-index="2">
+                                                    <a tabindex="0" class="" data-tokens="null">
+                                                        <span class="text">Penang</span>
+                                                        <span class="glyphicon glyphicon-ok check-mark"></span>
+                                                    </a>
+                                                </li>
+                                                <li data-original-index="3">
+                                                    <a tabindex="0" class=""data-tokens="null">
+                                                        <span class="text">Selangor</span>
+                                                        <span class="glyphicon glyphicon-ok check-mark"></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <select id="locPick" name="selValue" class="selectpicker show-tick form-control" tabindex="-98">
+                                        <option value="Any" selected="">Mana-mana</option>
+                                        <option value="Johor">Johor</option>
+                                        <option value="Penang">Penang</option>
+                                        <option value="Selangor">Selangor</option>                            </select></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city_wrapper">
+                                <div class="city mobile_game_dtls">
+                                    <div class="col-md-4 col-sm-6 col-xs-12 sl-location gamepadright0">
+                                        <label>Bandar</label>
+                                        <div class="input-group input-group-lg"> 
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="icon-addon addon-lg">
+                                                <div class="btn-group bootstrap-select show-tick form-control cityPick">
+                                                    <button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="cityPick" title="Mana-mana">
+                                                        <span class="filter-option pull-left">Mana-mana</span>&nbsp;
+                                                        <span class="bs-caret">
+                                                            <span class="caret"></span>
+                                                        </span>
+                                                    </button>
+                                                    <div class="dropdown-menu open">
+                                                        <ul class="dropdown-menu inner" role="menu">
+                                                            <li data-original-index="0" class="selected">
+                                                                <a tabindex="0" class="" data-tokens="null">
+                                                                    <span class="text">Mana-mana</span>
+                                                                    <span class="glyphicon glyphicon-ok check-mark"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <select id="cityPick" name="cityValue" class="selectpicker show-tick form-control cityPick" tabindex="-98">
+                                                        <option selected="" value="Any">Mana-mana</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-md-6 col-sm-6 col-xs-12 game_checkbox filter_time">
+                                <label>Pilihan Masa</label>
+                                    <div class="custom-checkbox checkbox-inline">
+                                        <input type="checkbox" id="AvailableMorning" value="Morning" name="start_time">
+                                        <label for="AvailableMorning">Pagi</label>
+                                    </div>
+                                    <div class="custom-checkbox checkbox-inline">
+                                        <input type="checkbox" id="AvailableAfternoon" value="Afternoon" name="start_time">
+                                        <label for="AvailableAfternoon">Petang</label>
+                                    </div>
+                                    <div class="custom-checkbox checkbox-inline">
+                                        <input type="checkbox" id="AvailableNight" value="Night" name="start_time">
+                                        <label for="AvailableNight">Malam</label>
+                                    </div>
+                            </div>
+                        <div class="adv_filter">
+                        <hr>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <label>Penarafan Hos</label>
+                            <div class="custom-checkbox checkbox-inline">
+                                <!--<img src="images/star.jpg" width="150" class="star_rating" />-->
+                                <div class="stars stars-example-fontawesome">
+                                <select id="example-fontawesome" name="rating" autocomplete="off">
+                                    <option disabled="" selected="" value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="3">2</option>
+                                    <option value="5">3</option>
+                                    <option value="7">4</option>
+                                    <option value="9">5</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="advance-filter-btn advance-filter-btn-top">
+                        <button class="btn btn-default btn-lg btn-block" id="adv_filter_btn">Lebih Tapisan ↓</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
