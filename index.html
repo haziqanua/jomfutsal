@@ -54,15 +54,11 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container poster">
-            <h1 class="display-4">Welcome to </h1>
-            <h4 class="display-1">FUTBOL FANATIK</h1>
-            <p class="lead">A place to find a futsal game and your new team</p>
-            <hr class="my-4">
-            <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
-            <a class="btn btn-primary btn-lg" href="register.html" role="button">Sign Up</a>
+            <div class="intro1">WELCOME TO </div>
+            <div class="intro2">FUTBOL FANATIK</div>
+            <p class="intro3">Where futbol meet fanatik!</p>
         </div>
     </div>
-
     <div class="booking-banner">
         <div class="container-fluid booking-filter">
             <div class="row">
@@ -70,33 +66,59 @@
                     <div class="panel" id="">BOOK YOUR GAME</div>
                 </div>
                 <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-6" id="">Booking for</div>
-                        <div class="col-md-6 Game">Futsal</div>
+                    <label class="booking-type">Booking for</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text booking-for"></span>
+                        </div>
+                        <select class="form-control game-type" id="game-type" placeholder="FUTSAL" required>
+                            <option>FUTSAL</option>
+                            <option>FOOTBALL</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-6" id="">Choose a date</div>
-                        <div class="col-md-6 date">Date</div>
+                    <label class="booking-type">Choose a date</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text booking-date"></span>
+                        </div>
+                        <input type="date" class="form-control game-type" id="game-date" required>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid game-card">
-            <row>
-            <p class="game-header col-6">BOOK YOUR GAME</p>
-            <p class="game-detail col-6">BOOK YOUR GAME</p>
-            </row>
+            <div class="row small-banner">
+                <div class="col-sm-4 shadow game-header">INDIVIDUAL</div>
+                <div class="col-sm-8 game-detail shadow">BOOK YOUR GAME</div>
+            </div>
         </div>
         <div class="container-fluid game-card">
-            <p class="game-header col-md-6">BOOK YOUR GAME</p>
-            <p class="game-detail col-md-6">BOOK YOUR GAME</p>
+            <div class="row">
+                <div class="col-sm-4 game-header shadow">TEAM GAMES</div>
+                <div class="col-sm-8 game-detail shadow">BOOK YOUR GAME</div>
+            </div>
         </div>
         <div class="container-fluid game-card">
-            <p class="game-header col-md-6">BOOK YOUR GAME</p>
-            <p class="game-detail col-md-6">BOOK YOUR GAME</p>
+            <div class="row">
+                <div class="col-sm-4 game-header shadow">BOOK A VENUE</div>
+                <div class="col-sm-8 game-detail shadow">BOOK YOUR GAME</div>
+            </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <div class="d-flex mb-3">
+            <div class="p-2">About Us</div>
+            <div class="p-2">Shop</div>
+            <div class="p-2">Contact Us</div>
+            <div class="ml-auto p-2 bd-highlight fb">FB</div>
+            <div class="p-2 bd-highlight insta">Insta</div>
+            <div class="p-2 bd-highlight twitter">twitter</div>
+            <div class="p-2 bd-highlight youtube">youtube</div>
+        </div>
+        <div class="d-flex logo justify-content-center logo">test</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

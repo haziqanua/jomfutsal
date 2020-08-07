@@ -12,6 +12,7 @@ html,
 body {
   height: 100%;
   font-family: normalFont;
+  width: 100%;
 }
 
 .navbar {
@@ -57,37 +58,160 @@ body {
     padding-right: 0%;
 }
 .jumbotron{
-    background-image: url(source/Futbol_Fanatik/stadium.jpg);
-    background-size: auto;
-    background-repeat: repeat;
+    background-image: url(source/Futbol_Fanatik/Picture_Frontpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
     margin: 0;
     font-family: boldFont;
     font-size: larger;
     color: #fbcb04;
+    height: 20rem;
+    padding: 6rem 22rem;
+}
+
+.poster {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+.intro1 {
+    
+    font-family: normalFont;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.intro2 {
+    
+    font-family: boldFont;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.intro3 {
+    
+    font-family: normalFont;
+    font-size: 1rem;
+    text-align: left;
 }
 
 .booking-banner {
     background-color: #fbcb04;
     background-image: url(source/Futbol_Fanatik/Bol.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: 90%;
+    background-position-y: bottom;
+    height: 25rem;
 }
 
 .booking-filter {
+    padding-top: 2rem;
     background-color: black;
     margin-bottom: 0.5rem;
+    height: 7rem;
 }
 
 .game-card {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    height: 5rem;
 }
 
 .game-header {
     background-color: black;
+    margin-bottom: 0.2rem;
+    z-index: 1;
+    clip-path:polygon(0 0, 100% 0, 95.5% 100%, 0% 100%);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    font-family: boldFont;
+    font-size: 1.8rem;
 }
 
 .game-detail {
     background-color: white;
+    color: black;
+    margin-top: 0.2rem;
+    margin-left: -1rem;
+    padding-left: 4rem;
+    z-index: 0;
+    position: relative;
+    right: 0;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.game-card .row {
+    height: 5rem;
+}
+
+.footer {
+    background-color: black;
+    color: #fbcb04;
+    font-family: boldFont;
+    height: 10rem;
+}
+
+.shadow {
+    box-shadow: 3px 2px 0px rgba(0,0,0,.4)!important;
+}
+
+.panel {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    text-align: end;
+    font-family: boldFont;
+    font-size: 1.8rem;
+}
+
+.booking-for {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(source/Futbol_Fanatik/Mockup/Booking.png);
+    background-size: cover;
+}
+
+.booking-date {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(source/Futbol_Fanatik/Mockup/Calendar.png);
+    background-size: cover;
+}
+
+.booking-type {
+    font-size: 0.8rem;
+    font-family: boldFont;
+    line-height: 0rem;
+}
+
+.input-group-text {
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 0;
+}
+
+.col-md-3 {
+    padding-right: 4rem;
+}
+
+.logo {
+    background-image: url(source/Futbol_Fanatik/Mockup/Logo.jpg);
+    width: 15rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
 }
