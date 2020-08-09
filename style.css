@@ -8,16 +8,38 @@
     src: url(source/Futbol_Fanatik/gilroy-extrabold.otf);
 }
 
+.bold {
+    font-family: boldFont;
+}
+
 html,
 body {
   height: 100%;
   font-family: normalFont;
   width: 100%;
+  background-color: #fbcb04;
+  color: #fbcb04;
+}
+
+a:hover {
+    color: #fbcb04;
+}
+
+.logo-brand {
+    display: inline-block;
+    background-image: url(source/Futbol_Fanatik/Mockup/Logo.jpg);
+    width: 15rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: 10rem;
 }
 
 .navbar {
     padding: 0.5rem 3rem;
-    font-family: boldFont;
+    flex-wrap: nowrap;
 }
 
 .navbar-collapse {
@@ -29,9 +51,8 @@ body {
     vertical-align: middle;
 }
 
-.bg-theme {
+.black-font {
     color: black;
-    background-color: #fbcb04;
 }
 
 .brand-name {
@@ -65,34 +86,25 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0;
-    font-family: boldFont;
-    font-size: larger;
-    color: #fbcb04;
     height: 20rem;
     padding: 0;
 }
 
 .poster {
     height: 100%;
-}
-.intro1 {
-    font-family: normalFont;
-    font-size: 2rem;
-    text-align: right;
+    padding: 0rem 2rem;
 }
 
-.intro2 {
-    
-    font-family: boldFont;
-    font-size: 2rem;
-    text-align: right;
+.poster:hover {
+    cursor: default;
 }
 
-.intro3 {
-    
-    font-family: normalFont;
+.welcome-top {
+    font-size: 2rem;
+}
+
+.welcome-bot {
     font-size: 1rem;
-    text-align: right;
 }
 
 .booking-banner {
@@ -105,14 +117,19 @@ body {
     color: #fbcb04;
     padding-left: 0%;
     padding-right: 0%;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
 }
 
 .booking-filter {
+    margin-bottom: 0.5rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
     background-color: black;
     height: fit-content
+}
+
+.game-type {
+    height: auto;
 }
 
 .game-card {
@@ -123,19 +140,17 @@ body {
 
 .game-header {
     background-color: black;
-    /* margin-bottom: 0.2rem; */
     z-index: 1;
     clip-path:polygon(0 0, 100% 0, 95.5% 100%, 0% 100%);
     padding-left: 1.5rem;
     padding-top: 1rem;
-    font-family: boldFont;
+    padding-bottom: 0.7rem;
     font-size: 1.8rem;
 }
 
 .game-detail {
     background-color: white;
     color: black;
-    /* margin-top: 0.2rem; */
     margin-left: -1rem;
     padding-left: 4rem;
     z-index: 0;
@@ -150,27 +165,32 @@ body {
 
 .game-card .row {
     height: max-content;
-    padding: 0
+    padding: 0;
+    margin-bottom: 0.5rem;
+    text-decoration: none  #fbcb04;
 }
 
 .footer {
     background-color: black;
-    color: #fbcb04;
-    font-family: boldFont;
     height: max-content;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
 }
 
 .shadow {
     box-shadow: 3px 2px 0px rgba(0,0,0,.4)!important;
 }
 
+
 .panel {
     padding-top: 1rem;
     padding-right: 1rem;
     text-align: center;
-    font-family: boldFont;
     font-size: 1.8rem;
+}
+
+.panel:hover {
+    cursor: default;
 }
 
 .booking-for {
@@ -189,7 +209,6 @@ body {
 
 .booking-type {
     font-size: 0.8rem;
-    font-family: boldFont;
     line-height: 0rem;
 }
 
@@ -229,4 +248,118 @@ body {
 
 .padding-4 {
     padding: 0% 4%;
+}
+
+.badge {
+    color: #fbcb04;
+}
+
+.card {
+    width: 18rem;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    background-color: #fbcb04;
+}
+
+.card-body {
+    padding: 0;
+}
+
+div.indi-pitch {
+    width: 100%;
+    height: 11rem;
+    background-image: url(source/Futbol_Fanatik/Mockup/Pitch.png);
+    overflow: hidden;
+    background-position: center;
+    background-size: 250%;
+}
+
+.individual-bg {
+    background-image: url(source/Futbol_Fanatik/Picture_Individual.jpg);
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-size: cover;
+    padding: 2rem;
+}
+
+div.team-pitch {
+    width: 100%;
+    height: 11rem;
+    background-image: url(source/Futbol_Fanatik/Mockup/Teamgame.png);
+    overflow: hidden;
+    background-position: center;
+    background-size: 250%;
+}
+
+.team-bg {
+    background-image: url(source/Futbol_Fanatik/Picture_Team.jpg);
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-size: cover;
+    padding: 2rem;
+}
+
+div.book-pitch {
+    width: 100%;
+    height: 11rem;
+    background-image: url(source/Futbol_Fanatik/Mockup/Venue_Book.png);
+    overflow: hidden;
+    background-position: center;
+    background-size: 250%;
+}
+
+.book-bg {
+    background-image: url(source/Futbol_Fanatik/Picture_Venue.jpg);
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+    border-radius: 0;
+    padding: 0rem .3rem;
+}
+
+.location-icon {
+    background-color: transparent;
+    background-image: url(source/Futbol_Fanatik/Mockup/Location.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3.8rem;
+}
+
+.calender-icon {
+    background-color: transparent;
+    background-image: url(source/Futbol_Fanatik/Mockup/Date.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3.8rem;
+}
+
+.time-icon {
+    background-color: transparent;
+    background-image: url(source/Futbol_Fanatik/Mockup/Time.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3.8rem;
+}
+
+.p-subtitle {
+    margin-bottom: 0;
 }

@@ -10,26 +10,23 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-theme">
-        <a class="navbar-brand" href="index.html">
-            <img src="source/Futbol_Fanatik/Bol.png" width="30" height="30" class="d-inline-block align-middle" alt="" loading="lazy">
-            <span class="brand-name text-wrap text-justify align-middle">FUTBOL FANATIK</span>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light black-font bold">
+        <a class="navbar-brand logo-brand" href="index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.html">LOG IN<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="login.html">LOG IN</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="register.html">SIGN UP</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">FUTSAL</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="#">FOOTBALL</a>
                 </li>
                 <button class="navbar-menu-button" type="button" data-toggle="" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,22 +53,23 @@
         <div class="d-flex flex-wrap align-items-stretch align-content-center poster">
             <div class="flex-fill"></div>
             <div>
-                <div class="d-flex justify-content-end flex-wrap">
-                    <div class="intro1">WELCOME TO </div>
-                    <div class="intro2">FUTBOL FANATIK</div>
+                <div class="d-flex justify-content-end flex-wrap welcome-top">
+                    <div class="">WELCOME TO </div>
+                    <div class="bold">FUTBOL FANATIK</div>
                 </div>
-                <p class="d-flex justify-content-end flex-wrap intro3">Where futbol meet fanatik!</p>
+                <p class="d-flex justify-content-end flex-wrap welcome-bot">Where futbol meet fanatik!</p>
             </div>
             <div class="flex-fill"></div>
         </div>
     </div>
+
     <div class="booking-banner">
         <div class="d-flex flex-wrap justify-content-center booking-filter">
             <div class="padding-4 bd-highlight flex-width-30">
-                <div class="panel" id="">BOOK YOUR GAME</div>
+                <div class="panel bold" id="">BOOK YOUR GAME</div>
             </div>
             <div class="padding-4 bd-highlight flex-width-25">
-                <label class="booking-type">Booking for</label>
+                <label class="booking-type bold">Booking for</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text booking-for"></span>
@@ -83,7 +81,7 @@
                 </div>
             </div>
             <div class="padding-4 bd-highlight flex-width-25">
-                <label class="booking-type">Choose a date</label>
+                <label class="booking-type bold">Choose a date</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text booking-date"></span>
@@ -92,37 +90,55 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid game-card">
-            <div class="row small-banner">
-                <div class="col-sm-4 shadow game-header">INDIVIDUAL</div>
-                <div class="col-sm-8 game-detail shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint vel ullam reiciendis expedita iusto at quae quibusdam alias officiis culpa eum a et perferendis praesentium eaque voluptas, magnam aperiam facere!</div>
-            </div>
-        </div>
-        <div class="container-fluid game-card">
+        <a href="individual.html" class="container-fluid game-card text-decoration-none">
             <div class="row">
-                <div class="col-sm-4 game-header shadow">TEAM GAMES</div>
-                <div class="col-sm-8 game-detail shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dicta nostrum, quasi minima, in sit enim delectus similique natus laudantium ex dolore qui corrupti optio ullam amet totam saepe ducimus.</div>
+                <div class="col-sm-4 game-header shadow bold">INDIVIDUAL</div>
+                <div class="col-sm-8 game-detail shadow">
+                    <span class="bold">No team, no problem</span>
+                    <br>
+                    Our individual games consist of players from different background, with on common objective; futbol!
+                </div>
             </div>
-        </div>
-        <div class="container-fluid game-card">
+        </a>
+        <a href="team-games.html" class="container-fluid game-card text-decoration-none">
             <div class="row">
-                <div class="col-sm-4 game-header shadow">BOOK A VENUE</div>
-                <div class="col-sm-8 game-detail shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facilis eligendi ratione minima, nisi fugiat pariatur repellendus reprehenderit. Perspiciatis, mollitia? Officia porro vitae nulla temporibus distinctio illo expedita cum quaerat.</div>
+                <div class="col-sm-4 game-header shadow bold">TEAM GAMES</div>
+                <div class="col-sm-8 game-detail shadow">
+                    <span class="bold">Time to battle!</span>
+                    <br>
+                    Bring your team, pick your opponent and show them why your team is the best among the best.
+                </div>
             </div>
-        </div>
+        </a>
+        <a href="book-venue.html" class="container-fluid game-card text-decoration-none">
+            <div class="row">
+                <div class="col-sm-4 game-header shadow bold">BOOK A VENUE</div>
+                <div class="col-sm-8 game-detail shadow">
+                    <span class="bold">Trouble finding a pitch</span>
+                    <br>
+                    With more than 100 weekly slots for you to choose from, your hassleis now in safe hand.
+                </div>
+            </div>
+        </a>
     </div>
 
-    <div class="footer">
-        <div class="d-flex flex-wrap mb-3">
-            <div class="p-2">About Us</div>
-            <div class="p-2">Shop</div>
-            <div class="p-2">Contact Us</div>
-            <div class="ml-auto p-2 bd-highlight fb">FB</div>
-            <div class="p-2 bd-highlight insta">Insta</div>
-            <div class="p-2 bd-highlight twitter">twitter</div>
-            <div class="p-2 bd-highlight youtube">youtube</div>
+    <div class="footer bold">
+        <div class="d-flex flex-wrap">
+            <div class="">
+                <a class="badge" href="">About Us</a>
+                <a class="badge" href="">Shop</a>
+                <a class="badge" href="">Contact Us</a>
+            </div>
+            <div class="ml-auto">
+                <a class="badge" href="">FB</a>
+                <a class="badge" href="">Insta</a>
+                <a class="badge" href="">Twitter</a>
+                <a class="badge" href="">Youtube</a>
+            </div>
         </div>
-        <div class="d-flex justify-content-center logo"></div>
+        <div class="d-flex justify-content-center">
+            <a class="logo text-decoration-none" href=""></a>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
