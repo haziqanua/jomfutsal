@@ -306,7 +306,7 @@ div.team-pitch {
     padding: 2rem;
 }
 
-div.book-pitch {
+div.venue-pitch {
     width: 100%;
     height: 11rem;
     background-image: url(source/Futbol_Fanatik/Mockup/Venue_Book.png);
@@ -315,7 +315,7 @@ div.book-pitch {
     background-size: 250%;
 }
 
-.book-bg {
+.venue-bg {
     background-image: url(source/Futbol_Fanatik/Picture_Venue.jpg);
     overflow-x: hidden;
     background-position: center;
