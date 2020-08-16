@@ -1,0 +1,12 @@
+.col-example{
+    padding: 1rem;
+    background-color: #33b5e5;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    margin: 0%;
+    width: 20rem;
+  }
+
+.invert-color { transition: all .2s ease-in-out; padding: 1rem; }
+.invert-color:hover { color: antiquewhite; background-color: black; }
